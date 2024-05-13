@@ -37,8 +37,7 @@ body{
 }
 
 .botones{
-    padding-left: 30%;
-    padding-right: 1%;
+    padding-left: 20%;
     display: flex;
 }
 
@@ -79,6 +78,220 @@ body{
     transform: scale(1.2);
 }
 
-@media screen and (min-width: 768px) {
+/*Modo Desktop*/
 
+@media screen and (min-width: 769px) {
+
+    .portada{
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+    }
+
+    .imagen-portada{
+        width: 95%;
+        border-radius: 20px;
+        transition: all 0.5s;
+    }
+
+    .imagen-portada:hover{
+        transform: scale(1.1);
+    }
+
+    .card-titulo{
+        background-color: darkslateblue;
+        width: 70%;
+        padding: 20px;
+        border-radius: 20px;
+        transition: all 0.5s;
+    }
+
+    .card-titulo:hover{
+        transform: scale(1.1);
+    }
+
+    .titulo{
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .descripcion{
+        color: wheat;
+        text-align: justify;
+        line-height: 1.5;
+    }
+
+    .boton-conoce{
+        text-align: center;
+        margin: 10px;
+    }
+
+    .conoce{
+        font-weight: 700;
+        color: white;
+        padding: 10px 20px;
+        margin: 10px;
+        text-align: center;
+        background-color: blue;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+
+    .conoce:hover{
+        background-color: rgb(1, 129, 123);;
+        color: darkblue;
+        transform: scale(1.1);
+    }
+
+    .detalles{
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+    }
+
+    .card-detalle{
+        background-color: darkslateblue;
+        width: 150%;
+        padding: 20px;
+        border-radius: 20px;
+        transition: all 0.5s;
+    }
+
+    .card-detalle:hover{
+        transform: scale(1.1);
+    }
+
+    .detalle-titulo{
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .detalle-descripcion{
+        color: wheat;
+        text-align: justify;
+        line-height: 1.5;
+    }
+
+    .streamer{
+        text-align: center;
+    }
+
+    .imagen-streamer{
+        width: 80%;
+        margin: 0 10px 0 10px;
+        border-radius: 20px;
+        transition: all 0.5s;
+    }
+
+    .imagen-streamer:hover{
+        transform: scale(1.1);
+    }
+}
+
+/*Modo Mobile*/
+
+@media screen and (max-width: 768px) {
+    .portada{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 10px;
+    }
+
+    .imagen-portada{
+        width: 95%;
+        border-radius: 20px;
+        transition: all 0.5s;
+        margin: 10px 0 10px 10px;
+    }
+
+    .imagen-portada:hover{
+        transform: scale(1.1);
+    }
+
+    .card-titulo{
+        background-color: darkslateblue;
+        width: 95%;
+        padding: 20px;
+        margin: 10px 0 10px 10px;
+        border-radius: 20px;
+        transition: all 0.5s;
+    }
+
+    .card-titulo:hover{
+        transform: scale(1.1);
+    }
+
+    .titulo{
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .descripcion{
+        color: wheat;
+        text-align: justify;
+        line-height: 1.5;
+    }
+
+    .boton-conoce{
+        text-align: center;
+        margin: 10px;
+    }
+
+    .conoce{
+        font-weight: 700;
+        color: white;
+        padding: 10px 20px;
+        margin: 10px;
+        text-align: center;
+        background-color: blue;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+
+    .conoce:hover{
+        background-color: rgb(1, 129, 123);;
+        color: darkblue;
+        transform: scale(1.1);
+    }
+
+    .detalles{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .card-detalle{
+        background-color: darkslateblue;
+        width: 95%;
+        padding: 20px;
+        margin: 10px 0 10px 10px;
+        border-radius: 20px;
+        transition: all 0.5s;
+    }
+
+    .detalle-titulo{
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .detalle-descripcion{
+        color: wheat;
+        text-align: justify;
+        line-height: 1.5;
+    }
+
+    .imagen-streamer{
+        width: 95%;
+        padding: 10px;
+        border-radius: 20px;
+        transition: all 0.5s;
+    }
 }
