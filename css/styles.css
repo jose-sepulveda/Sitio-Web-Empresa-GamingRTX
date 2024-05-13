@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Verdana', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 20;
 }
 
@@ -50,6 +52,7 @@ body{
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    box-shadow: 3px 3px 15px rgb(37, 37, 37);
 }
 
 .boton-nav:hover{
@@ -84,15 +87,21 @@ body{
 
     .portada{
         display: flex;
-        flex-direction: row;
+        justify-content: space-between;
         margin: 10px;
     }
 
+    .foto-portada{
+        width: 50%;
+        margin: 20px 10px 10px 20px
+    }
+
     .imagen-portada{
-        width: 95%;
+        width: 100%;
+        height: 97%;
         border-radius: 20px;
         transition: all 0.5s;
-        margin: 10px;
+        box-shadow: 3px 3px 15px rgb(69, 0, 100);
     }
 
     .imagen-portada:hover{
@@ -101,11 +110,12 @@ body{
 
     .card-titulo{
         background-color: darkslateblue;
-        width: 70%;
-        padding: 20px;
+        width: 50%;
+        margin: 20px;
+        padding: 30px;
         border-radius: 20px;
         transition: all 0.5s;
-        margin: 10px;
+        box-shadow: 3px 3px 15px rgb(69, 0, 100);
     }
 
     .card-titulo:hover{
@@ -140,6 +150,7 @@ body{
         border-radius: 50px;
         cursor: pointer;
         transition: all 0.3s ease 0s;
+        box-shadow: 3px 3px 15px rgb(37, 37, 37);
     }
 
     .conoce:hover{
@@ -150,17 +161,18 @@ body{
 
     .detalles{
         display: flex;
-        flex-direction: row;
         margin: 10px;
+        justify-content: center;
     }
 
     .card-detalle{
         background-color: darkslateblue;
-        width: 100%;
-        padding: 20px;
+        width: 50%;
+        margin: 20px;
+        padding: 30px;
         border-radius: 20px;
         transition: all 0.5s;
-        margin: 10px;
+        box-shadow: 3px 3px 15px rgb(69, 0, 100);
     }
 
     .card-detalle:hover{
@@ -181,13 +193,16 @@ body{
 
     .streamer{
         text-align: center;
+        width: 50%;
+        margin: 20px;
     }
 
     .imagen-streamer{
-        width: 80%;
-        margin: 10px;
+        width: 100%;
         border-radius: 20px;
         transition: all 0.5s;
+        box-shadow: 3px 3px 15px rgb(69, 0, 100);
+        justify-content: center;
     }
 
     .imagen-streamer:hover{
@@ -212,7 +227,9 @@ body{
 
     .productos{
         display: flex;
-        margin: 10px;
+        justify-content: center;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .kit-gamer{
@@ -220,8 +237,9 @@ body{
         background-color: rgb(98, 1, 139);
         border-radius: 20px;
         margin: 10px;
-        width: 30%;
+        width: 100%;
         transition: all 0.5s;
+        box-shadow: 3px 3px 15px rgb(160, 0, 0);
     }
 
     .kit-gamer:hover{
@@ -231,6 +249,7 @@ body{
     .titulo-kit{
         color: white;
         text-align: center;
+        line-height: 1.5;
         padding: 10px;
     }
 
@@ -249,11 +268,92 @@ body{
         width: 100%;
         border-radius: 20px;
     }
+
+    .monitor-gamer{
+        padding: 10px;
+        background-color: rgb(98, 1, 139);
+        border-radius: 20px;
+        margin: 10px;
+        width: 100%;
+        transition: all 0.5s;
+        box-shadow: 3px 3px 15px rgb(160, 0, 0);
+    }
+
+    .monitor-gamer:hover{
+        transform: scale(1.1);
+    }
+
+    .titulo-monitor{
+        color: white;
+        text-align: center;
+        line-height: 1.5;
+        padding: 10px;
+    }
+
+    .descripcion-monitor{
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .imagen-monitor{
+        text-align:end;
+        padding: 10px;
+    }
+
+    .imagen-producto-2{
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .silla-gamer{
+        padding: 10px;
+        background-color: rgb(98, 1, 139);
+        border-radius: 20px;
+        margin: 10px;
+        width: 100%;
+        transition: all 0.5s;
+        box-shadow: 3px 3px 15px rgb(160, 0, 0);
+    }
+
+    .silla-gamer:hover{
+        transform: scale(1.1);
+    }
+
+    .titulo-silla{
+        color: white;
+        text-align: center;
+        line-height: 1.5;
+        padding: 10px;
+    }
+
+    .descripcion-silla{
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .imagen-silla{
+        text-align:end;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .imagen-producto-3{
+        width: 85%;
+        border-radius: 20px;
+    }
+
 }
 
 /*Modo Mobile*/
 
 @media screen and (max-width: 768px) {
+    .body{
+        justify-content: center;
+        align-items: center;
+    }
+
     .portada{
         display: flex;
         flex-direction: column-reverse;
@@ -372,7 +472,8 @@ body{
 
     .productos{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
         margin: 10px;
     }
@@ -408,6 +509,78 @@ body{
     }
 
     .imagen-producto-1{
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .monitor-gamer{
+        padding: 10px;
+        background-color: rgb(98, 1, 139);
+        border-radius: 20px;
+        margin: 10px;
+        width: 70%;
+        transition: all 0.5s;
+    }
+
+    .monitor-gamer:hover{
+        transform: scale(1.1);
+    }
+
+    .titulo-monitor{
+        color: white;
+        text-align: center;
+        line-height: 1.5;
+        padding: 10px;
+    }
+
+    .descripcion-monitor{
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .imagen-monitor{
+        text-align:end;
+        padding: 10px;
+    }
+
+    .imagen-producto-2{
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .silla-gamer{
+        padding: 10px;
+        background-color: rgb(98, 1, 139);
+        border-radius: 20px;
+        margin: 10px;
+        width: 70%;
+        transition: all 0.5s;
+    }
+
+    .silla-gamer:hover{
+        transform: scale(1.1);
+    }
+
+    .titulo-silla{
+        color: white;
+        text-align: center;
+        line-height: 1.5;
+        padding: 10px;
+    }
+
+    .descripcion-silla{
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .imagen-silla{
+        text-align:end;
+        padding: 10px;
+    }
+
+    .imagen-producto-3{
         width: 100%;
         border-radius: 20px;
     }
