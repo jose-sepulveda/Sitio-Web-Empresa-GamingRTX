@@ -92,6 +92,7 @@ body{
         width: 95%;
         border-radius: 20px;
         transition: all 0.5s;
+        margin: 10px;
     }
 
     .imagen-portada:hover{
@@ -104,6 +105,7 @@ body{
         padding: 20px;
         border-radius: 20px;
         transition: all 0.5s;
+        margin: 10px;
     }
 
     .card-titulo:hover{
@@ -154,10 +156,11 @@ body{
 
     .card-detalle{
         background-color: darkslateblue;
-        width: 150%;
+        width: 100%;
         padding: 20px;
         border-radius: 20px;
         transition: all 0.5s;
+        margin: 10px;
     }
 
     .card-detalle:hover{
@@ -182,13 +185,69 @@ body{
 
     .imagen-streamer{
         width: 80%;
-        margin: 0 10px 0 10px;
+        margin: 10px;
         border-radius: 20px;
         transition: all 0.5s;
     }
 
     .imagen-streamer:hover{
         transform: scale(1.1);
+    }
+
+    .estrellas{
+        text-align: center;
+    }
+
+    .estrella1{
+        padding: 10px;
+    }
+
+    .estrella2{
+        padding: 10px;
+    }
+
+    .estrella3{
+        padding: 10px;
+    }
+
+    .productos{
+        display: flex;
+        margin: 10px;
+    }
+
+    .kit-gamer{
+        padding: 10px;
+        background-color: rgb(98, 1, 139);
+        border-radius: 20px;
+        margin: 10px;
+        width: 30%;
+        transition: all 0.5s;
+    }
+
+    .kit-gamer:hover{
+        transform: scale(1.1);
+    }
+
+    .titulo-kit{
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .descripcion-kit{
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .imagen-kit{
+        text-align: center;
+        padding: 10px;
+    }
+
+    .imagen-producto-1{
+        width: 100%;
+        border-radius: 20px;
     }
 }
 
@@ -293,5 +352,63 @@ body{
         padding: 10px;
         border-radius: 20px;
         transition: all 0.5s;
+    }
+
+    .estrellas{
+        text-align: center;
+    }
+
+    .estrella1{
+        padding: 10px;
+    }
+
+    .estrella2{
+        padding: 10px;
+    }
+
+    .estrella3{
+        padding: 10px;
+    }
+
+    .productos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .kit-gamer{
+        padding: 10px;
+        background-color: rgb(98, 1, 139);
+        border-radius: 20px;
+        margin: 10px;
+        width: 70%;
+        transition: all 0.5s;
+    }
+
+    .kit-gamer:hover{
+        transform: scale(1.1);
+    }
+
+    .titulo-kit{
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .descripcion-kit{
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .imagen-kit{
+        text-align: center;
+        padding: 10px;
+    }
+
+    .imagen-producto-1{
+        width: 100%;
+        border-radius: 20px;
     }
 }
