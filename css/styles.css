@@ -427,6 +427,13 @@ body{
         transform: scale(1.1);
     }
 
+    .fecha{
+        color: white;
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+    }
+
 }
 
 /*Modo Mobile*/
@@ -746,5 +753,12 @@ body{
         background-color: rgb(114, 0, 221);
         color: yellow;
         transform: scale(1.1);
+    }
+
+    .fecha{
+        color: white;
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
     }
 }
